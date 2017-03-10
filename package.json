@@ -1,0 +1,22 @@
+{
+  "name": "littlefall",
+  "version": "1.0.0",
+  "description": "这是一个微型的瀑布流个人学习项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echoloyuk/littlefall.git"
+  },
+  "keywords": [
+    "waterfall"
+  ],
+  "author": "machi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echoloyuk/littlefall/issues"
+  },
+  "homepage": "https://github.com/echoloyuk/littlefall#readme"
+}
