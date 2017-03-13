@@ -6,7 +6,7 @@
 ;(function () {
     var LittleFall = function (arr) {
         this.queue = [];
-        this.version = '1.0.0';
+        this.version = '0.0.1.Beta';
 
         this._init(arr);
         this.next();
@@ -25,6 +25,9 @@
             if (typeof fn === 'function') {
                 fn.apply(this, [this._getNextFn(this.next)].concat(args));
             }
+        },
+        add: function () {
+
         },
         _init: function (arr) {
             if (!arr && !arr.length) {
