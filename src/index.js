@@ -26,8 +26,10 @@
                 fn.apply(this, [this._getNextFn(this.next)].concat(args));
             }
         },
-        add: function () {
-
+        add: function (arr) {
+            if (Object.prototype.toString.call(arr) === 'array') {
+                
+            }
         },
         _init: function (arr) {
             if (!arr && !arr.length) {
