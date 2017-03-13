@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>littlefall</title>
+    <title>littlefall</title>
 </head>
 <body>
 <script type="text/javascript" src="../src/index.js"></script>
 <script type="text/javascript">
-
+var l = new LittleFall([
+    function (next) {
+        console.log(1);
+        next(1, 2, 3);
+    },
+    function (next, p1, p2, p3) {
+        console.log(2);
+        console.log(p1, p2, p3);
+        next();
+    },
+    function (next) {
+        console.log(3);
+        next();
+    }
+]);
 </script>
 </body>
 </html>
